@@ -6,6 +6,10 @@ import soot.SceneTransformer;
 
 public class SootLauncher extends SceneTransformer{
 
+	public SootLauncher(ShadowInstrumenter shadowTransformer) {
+		// TODO Auto-generated constructor stub
+	}
+
 	public void launch(String apkPath, String androidJars)
 	{
 		String[] args = {};
