@@ -18,7 +18,7 @@ public class SootLauncher extends SceneTransformer{
 	}
 	
 	@Override
-	protected void internalTransform(String phaseName, Map options) {
+	protected void internalTransform(String phaseName, Map<String, String> options) {
 		// TODO Auto-generated method stub
 		
 	}
