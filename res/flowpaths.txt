@@ -1,0 +1,2 @@
+Found a flow to sink virtualinvoke $r2.<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)>("+8612345", null, $r1, null, null), from the following sources:
+	- virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.ex.testandroid.Main: void onCreate(android.os.Bundle)>)
