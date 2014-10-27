@@ -2,8 +2,7 @@ package test;
 
 import java.util.Iterator;
 import java.util.Map;
-import soot.Value;
-import soot.ArrayType;
+
 import soot.Body;
 import soot.BodyTransformer;
 import soot.G;
@@ -18,9 +17,9 @@ import soot.SootMethod;
 import soot.Transform;
 import soot.Type;
 import soot.Unit;
+import soot.Value;
 import soot.jimple.AbstractStmtSwitch;
 import soot.jimple.ArrayRef;
-import soot.jimple.IntConstant;
 import soot.jimple.InvokeExpr;
 import soot.jimple.InvokeStmt;
 import soot.jimple.Jimple;
@@ -32,11 +31,11 @@ import soot.options.Options;
 
 public class TransformAPKs_IntentSinks {
 	static int numSendIntentMethods = 0;
-	static String newField = "newField_";
-	//public static final String  
+	static String newField = "newField_"; 
 	
 	public static void main(String[] args) {
 		Options.v().set_allow_phantom_refs(true);
+		
 		//prefer Android APK files// -src-prec apk
 		Options.v().set_src_prec(Options.src_prec_apk);
 		//output as APK, too//-f J
@@ -48,7 +47,7 @@ public class TransformAPKs_IntentSinks {
 
 		PackManager.v().getPack("jtp").add(new Transform("jtp.myInstrumenter", new BodyTransformer() {	
 			@Override
-			protected void internalTransform(final Body b, String phaseName, @SuppressWarnings("rawtypes") Map options) {
+			protected void internalTransform(final Body b, String phaseName, Map<String, String> options) {
 				final PatchingChain<Unit> units = b.getUnits();	
 				//important to use snapshotIterator here
 				for(Iterator<Unit> iter = units.snapshotIterator(); iter.hasNext();) {
