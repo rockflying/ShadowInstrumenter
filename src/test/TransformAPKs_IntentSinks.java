@@ -152,8 +152,10 @@ public class TransformAPKs_IntentSinks {
 	}
 	
 	public static boolean intentSinkMethod(Stmt stmt) {
-		SootClass android_content_Context, android_content_IntentFilter, android_app_Activity;
-		boolean isClassSuperOrSameIFILTER, isClassSuperOrSameCONTEXT, isClassSuperOrSameACTIVITY;
+//		SootClass android_content_Context, android_content_IntentFilter;
+		SootClass android_app_Activity;
+//		boolean isClassSuperOrSameIFILTER, isClassSuperOrSameCONTEXT;
+		boolean isClassSuperOrSameACTIVITY;
 		boolean matched = false;
 		AbstractInvokeExpr ie = (AbstractInvokeExpr) stmt.getInvokeExpr();
 		SootMethod meth = ie.getMethod();
