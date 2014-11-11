@@ -2,8 +2,7 @@ package test;
 
 import java.util.Iterator;
 import java.util.Map;
-import soot.Value;
-import soot.ArrayType;
+
 import soot.Body;
 import soot.BodyTransformer;
 import soot.G;
@@ -18,9 +17,9 @@ import soot.SootMethod;
 import soot.Transform;
 import soot.Type;
 import soot.Unit;
+import soot.Value;
 import soot.jimple.AbstractStmtSwitch;
 import soot.jimple.ArrayRef;
-import soot.jimple.IntConstant;
 import soot.jimple.InvokeExpr;
 import soot.jimple.InvokeStmt;
 import soot.jimple.Jimple;
@@ -32,11 +31,11 @@ import soot.options.Options;
 
 public class TransformAPKs_IntentSinks {
 	static int numSendIntentMethods = 0;
-	static String newField = "newField_";
-	//public static final String  
+	static String newField = "newField_"; 
 	
 	public static void main(String[] args) {
 		Options.v().set_allow_phantom_refs(true);
+		
 		//prefer Android APK files// -src-prec apk
 		Options.v().set_src_prec(Options.src_prec_apk);
 		//output as APK, too//-f J
@@ -153,8 +152,10 @@ public class TransformAPKs_IntentSinks {
 	}
 	
 	public static boolean intentSinkMethod(Stmt stmt) {
-		SootClass android_content_Context, android_content_IntentFilter, android_app_Activity;
-		boolean isClassSuperOrSameIFILTER, isClassSuperOrSameCONTEXT, isClassSuperOrSameACTIVITY;
+//		SootClass android_content_Context, android_content_IntentFilter;
+		SootClass android_app_Activity;
+//		boolean isClassSuperOrSameIFILTER, isClassSuperOrSameCONTEXT;
+		boolean isClassSuperOrSameACTIVITY;
 		boolean matched = false;
 		AbstractInvokeExpr ie = (AbstractInvokeExpr) stmt.getInvokeExpr();
 		SootMethod meth = ie.getMethod();
