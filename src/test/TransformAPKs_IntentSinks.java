@@ -48,7 +48,7 @@ public class TransformAPKs_IntentSinks {
 
 		PackManager.v().getPack("jtp").add(new Transform("jtp.myInstrumenter", new BodyTransformer() {	
 			@Override
-			protected void internalTransform(final Body b, String phaseName, @SuppressWarnings("rawtypes") Map options) {
+			protected void internalTransform(final Body b, String phaseName,Map<String, String> options) {
 				final PatchingChain<Unit> units = b.getUnits();	
 				//important to use snapshotIterator here
 				for(Iterator<Unit> iter = units.snapshotIterator(); iter.hasNext();) {
@@ -58,7 +58,7 @@ public class TransformAPKs_IntentSinks {
 							Value val2, val3, arg;
 							Type argType;
 							Local tmpRef;
-							ArrayRef aRef;
+//							ArrayRef aRef;
 							InvokeExpr invokeExpr = stmt.getInvokeExpr();
 							/*G.v().out.println("stmt is "+ stmt);*/
 							Boolean isIntentSendingMethod = intentSinkMethod(stmt);
