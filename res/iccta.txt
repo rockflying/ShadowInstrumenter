@@ -35,32 +35,9 @@ SLF4J: Found binding in [jar:file:/F:/workspace/soot-infoflow/lib/slf4j-simple-1
 SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
 SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
 [main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 51 classes and 4 exclusions.
-[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.096952553 seconds
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.022565341 seconds
 [IccTA] Using 'D:\android-sdk\platforms\\android-19\android.jar' as android.jar
 [IccTA] Warning: java.lang.ref.Finalizer is a phantom class!
-[IccTA] Warning: android.app.Notification$Action$Builder is a phantom class!
-[IccTA] Warning: android.app.RemoteInput$Builder is a phantom class!
-[IccTA] Warning: android.app.RemoteInput is a phantom class!
-[IccTA] Warning: android.app.SharedElementCallback is a phantom class!
-[IccTA] Warning: android.graphics.Outline is a phantom class!
-[IccTA] Warning: android.media.AudioAttributes$Builder is a phantom class!
-[IccTA] Warning: android.media.AudioAttributes is a phantom class!
-[IccTA] Warning: android.media.MediaMetadata$Builder is a phantom class!
-[IccTA] Warning: android.media.MediaMetadata is a phantom class!
-[IccTA] Warning: android.media.VolumeProvider is a phantom class!
-[IccTA] Warning: android.media.session.MediaController$Callback is a phantom class!
-[IccTA] Warning: android.media.session.MediaController$PlaybackInfo is a phantom class!
-[IccTA] Warning: android.media.session.MediaController$TransportControls is a phantom class!
-[IccTA] Warning: android.media.session.MediaController is a phantom class!
-[IccTA] Warning: android.media.session.MediaSession$Callback is a phantom class!
-[IccTA] Warning: android.media.session.MediaSession$Token is a phantom class!
-[IccTA] Warning: android.media.session.MediaSession is a phantom class!
-[IccTA] Warning: android.media.session.PlaybackState$Builder is a phantom class!
-[IccTA] Warning: android.media.session.PlaybackState is a phantom class!
-[IccTA] Warning: android.transition.Transition$EpicenterCallback is a phantom class!
-[IccTA] Warning: android.view.View$OnApplyWindowInsetsListener is a phantom class!
-[IccTA] Warning: android.view.WindowInsets is a phantom class!
-[IccTA] Warning: android.view.accessibility.AccessibilityNodeInfo$AccessibilityAction is a phantom class!
 [main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
     public static void dummyMainMethod()
     {
@@ -122,11 +99,11 @@ SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
     }
 
 [Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
-[Spark] Pointer Assignment Graph in 0.7 seconds.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
 [Spark] Type masks in 0.0 seconds.
 [Spark] Pointer Graph simplified in 0.0 seconds.
-[Spark] Propagation in 0.5 seconds.
-[Spark] Solution found in 0.5 seconds.
+[Spark] Propagation in 0.1 seconds.
+[Spark] Solution found in 0.1 seconds.
 [IccTA] Callback analysis done.
 [IccTA] Warning: RelativeLayout is a phantom class!
 [IccTA] Warning: com.test.targetandroid.RelativeLayout is a phantom class!
@@ -138,10 +115,10 @@ SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
 [IccTA] Warning: LinearLayout is a phantom class!
 [IccTA] Warning: com.test.targetandroid.LinearLayout is a phantom class!
 [IccTA] Warning: android.view.LinearLayout is a phantom class!
+Could not find layout class requestFocus
 [IccTA] Warning: Button is a phantom class!
 [IccTA] Warning: com.test.targetandroid.Button is a phantom class!
 [IccTA] Warning: android.view.Button is a phantom class!
-Could not find layout class requestFocus
 [IccTA] Warning: ProgressBar is a phantom class!
 [IccTA] Warning: com.test.targetandroid.ProgressBar is a phantom class!
 [IccTA] Warning: android.view.ProgressBar is a phantom class!
@@ -157,145 +134,10 @@ Could not find layout class requestFocus
 [IccTA] Found 4 layout controls
 [IccTA] Using 'D:\android-sdk\platforms\\android-19\android.jar' as android.jar
 [IccTA] Warning: java.lang.ref.Finalizer is a phantom class!
-[IccTA] Warning: android.app.Notification$Action$Builder is a phantom class!
-[IccTA] Warning: android.app.RemoteInput$Builder is a phantom class!
-[IccTA] Warning: android.app.RemoteInput is a phantom class!
-[IccTA] Warning: android.app.SharedElementCallback is a phantom class!
-[IccTA] Warning: android.graphics.Outline is a phantom class!
-[IccTA] Warning: android.media.AudioAttributes$Builder is a phantom class!
-[IccTA] Warning: android.media.AudioAttributes is a phantom class!
-[IccTA] Warning: android.media.MediaMetadata$Builder is a phantom class!
-[IccTA] Warning: android.media.MediaMetadata is a phantom class!
-[IccTA] Warning: android.media.VolumeProvider is a phantom class!
-[IccTA] Warning: android.media.session.MediaController$Callback is a phantom class!
-[IccTA] Warning: android.media.session.MediaController$PlaybackInfo is a phantom class!
-[IccTA] Warning: android.media.session.MediaController$TransportControls is a phantom class!
-[IccTA] Warning: android.media.session.MediaController is a phantom class!
-[IccTA] Warning: android.media.session.MediaSession$Callback is a phantom class!
-[IccTA] Warning: android.media.session.MediaSession$Token is a phantom class!
-[IccTA] Warning: android.media.session.MediaSession is a phantom class!
-[IccTA] Warning: android.media.session.PlaybackState$Builder is a phantom class!
-[IccTA] Warning: android.media.session.PlaybackState is a phantom class!
-[IccTA] Warning: android.transition.Transition$EpicenterCallback is a phantom class!
-[IccTA] Warning: android.view.View$OnApplyWindowInsetsListener is a phantom class!
-[IccTA] Warning: android.view.WindowInsets is a phantom class!
-[IccTA] Warning: android.view.accessibility.AccessibilityNodeInfo$AccessibilityAction is a phantom class!
-[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for android.view.Menu, because it is an interface and cannot substitute with subclass
-[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for android.view.MenuItem, because it is an interface and cannot substitute with subclass
 [Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
-[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
-    public static void dummyMainMethod()
-    {
-        int $i0;
-        com.test.targetandroid.MainActivity $r0;
-        android.os.Bundle $r1, $r3;
-        boolean $z0, $z1;
-        com.test.targetandroid.LeakSink $r2;
-
-        $i0 = 0;
-
-     label1:
-        if $i0 == 0 goto label3;
-
-        $r0 = new com.test.targetandroid.MainActivity;
-
-        specialinvoke $r0.<com.test.targetandroid.MainActivity: void <init>()>();
-
-        if $i0 == 1 goto label3;
-
-        $r1 = new android.os.Bundle;
-
-        specialinvoke $r1.<android.os.Bundle: void <init>()>();
-
-        virtualinvoke $r0.<com.test.targetandroid.MainActivity: void onCreate(android.os.Bundle)>($r1);
-
-        $r1 = null;
-
-     label2:
-        $z0 = virtualinvoke $r0.<com.test.targetandroid.MainActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
-
-        $z1 = virtualinvoke $r0.<com.test.targetandroid.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
-
-        if $i0 == 4 goto label2;
-
-        if $i0 == 5 goto label2;
-
-        if $i0 == 6 goto label2;
-
-        if $i0 == 7 goto label3;
-
-        if $i0 == 8 goto label2;
-
-     label3:
-        if $i0 == 10 goto label5;
-
-        $r2 = new com.test.targetandroid.LeakSink;
-
-        specialinvoke $r2.<com.test.targetandroid.LeakSink: void <init>()>();
-
-        if $i0 == 11 goto label5;
-
-        $r3 = new android.os.Bundle;
-
-        specialinvoke $r3.<android.os.Bundle: void <init>()>();
-
-        virtualinvoke $r2.<com.test.targetandroid.LeakSink: void onCreate(android.os.Bundle)>($r3);
-
-        $r3 = null;
-
-     label4:
-        if $i0 == 14 goto label5;
-
-        if $i0 == 15 goto label4;
-
-     label5:
-        if $i0 == 17 goto label1;
-
-        return;
-    }
-
 [Spark] Pointer Assignment Graph in 0.0 seconds.
 [Spark] Type masks in 0.0 seconds.
 [Spark] Pointer Graph simplified in 0.0 seconds.
-[Spark] Propagation in 0.2 seconds.
-[Spark] Solution found in 0.2 seconds.
-[IccTA] Running incremental callback analysis for 2 components...
-[IccTA] Incremental callback analysis done.
-[IccTA] Found 4 layout controls
-[IccTA] Found 4 callback methods for 2 components
-[IccTA] Entry point calculation done.
-[IccTA] Created a SourceSinkManager with 43 sources, 88 sinks, and 4 callback methods.
-[IccTA] Running data flow analysis...
-[IccTA] Running data flow analysis on F:\xuhao\Android\TargetAndroid.apk with 43 sources and 88 sinks...
-[IccTA] Starting infoflow computation...
-[IccTA] Using 'D:\android-sdk\platforms\\android-19\android.jar' as android.jar
-[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
-[IccTA] Warning: java.lang.ref.Finalizer is a phantom class!
-[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
-[main] ERROR soot.jimple.infoflow.Infoflow - Only phantom classes loaded, skipping analysis...
-[IccTA] Warning: android.app.Notification$Action$Builder is a phantom class!
-[IccTA] Warning: android.app.RemoteInput$Builder is a phantom class!
-[IccTA] Warning: android.app.RemoteInput is a phantom class!
-[IccTA] Warning: android.app.SharedElementCallback is a phantom class!
-[IccTA] Warning: android.graphics.Outline is a phantom class!
-[IccTA] Warning: android.media.AudioAttributes$Builder is a phantom class!
-[IccTA] Warning: android.media.AudioAttributes is a phantom class!
-[IccTA] Warning: android.media.MediaMetadata$Builder is a phantom class!
-[IccTA] Warning: android.media.MediaMetadata is a phantom class!
-[IccTA] Warning: android.media.VolumeProvider is a phantom class!
-[IccTA] Warning: android.media.session.MediaController$Callback is a phantom class!
-[IccTA] Warning: android.media.session.MediaController$PlaybackInfo is a phantom class!
-[IccTA] Warning: android.media.session.MediaController$TransportControls is a phantom class!
-[IccTA] Warning: android.media.session.MediaController is a phantom class!
-[IccTA] Warning: android.media.session.MediaSession$Callback is a phantom class!
-[IccTA] Warning: android.media.session.MediaSession$Token is a phantom class!
-[IccTA] Warning: android.media.session.MediaSession is a phantom class!
-[IccTA] Warning: android.media.session.PlaybackState$Builder is a phantom class!
-[IccTA] Warning: android.media.session.PlaybackState is a phantom class!
-[IccTA] Warning: android.transition.Transition$EpicenterCallback is a phantom class!
-[IccTA] Warning: android.view.View$OnApplyWindowInsetsListener is a phantom class!
-[IccTA] Warning: android.view.WindowInsets is a phantom class!
-[IccTA] Warning: android.view.accessibility.AccessibilityNodeInfo$AccessibilityAction is a phantom class!
 [main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for android.view.MenuItem, because it is an interface and cannot substitute with subclass
 [main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for android.view.Menu, because it is an interface and cannot substitute with subclass
 [main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
@@ -369,38 +211,103 @@ Could not find layout class requestFocus
         return;
     }
 
-[IccTA] In step Beginning, The number of Jimple line is 36110
-In step Beginning, The number of Jimple method is 10912
-In step Beginning, The number of Jimple class is 855
-In step Beginning, The number of Jimple component is 7
+[Spark] Propagation in 0.1 seconds.
+[Spark] Solution found in 0.1 seconds.
+[IccTA] Running incremental callback analysis for 2 components...
+[IccTA] Incremental callback analysis done.
+[IccTA] Found 4 layout controls
+[IccTA] Found 4 callback methods for 2 components
+[IccTA] Entry point calculation done.
+[IccTA] Created a SourceSinkManager with 43 sources, 88 sinks, and 4 callback methods.
+[IccTA] Running data flow analysis...
+[IccTA] Running data flow analysis on F:\workspace\TargetAndroid\bin\TargetAndroid.apk with 43 sources and 88 sinks...
+[IccTA] Starting infoflow computation...
+[IccTA] Using 'D:\android-sdk\platforms\\android-19\android.jar' as android.jar
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+[IccTA] Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] ERROR soot.jimple.infoflow.Infoflow - Only phantom classes loaded, skipping analysis...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for android.view.Menu, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for android.view.MenuItem, because it is an interface and cannot substitute with subclass
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod()
+    {
+        int $i0;
+        com.test.targetandroid.MainActivity $r0;
+        android.os.Bundle $r1, $r3;
+        boolean $z0, $z1;
+        com.test.targetandroid.LeakSink $r2;
+
+        $i0 = 0;
+
+     label1:
+        if $i0 == 0 goto label3;
+
+        $r0 = new com.test.targetandroid.MainActivity;
+
+        specialinvoke $r0.<com.test.targetandroid.MainActivity: void <init>()>();
+
+        if $i0 == 1 goto label3;
+
+        $r1 = new android.os.Bundle;
+
+        specialinvoke $r1.<android.os.Bundle: void <init>()>();
+
+        virtualinvoke $r0.<com.test.targetandroid.MainActivity: void onCreate(android.os.Bundle)>($r1);
+
+        $r1 = null;
+
+     label2:
+        $z0 = virtualinvoke $r0.<com.test.targetandroid.MainActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+        $z1 = virtualinvoke $r0.<com.test.targetandroid.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+        if $i0 == 4 goto label2;
+
+        if $i0 == 5 goto label2;
+
+        if $i0 == 6 goto label2;
+
+        if $i0 == 7 goto label3;
+
+        if $i0 == 8 goto label2;
+
+     label3:
+        if $i0 == 10 goto label5;
+
+        $r2 = new com.test.targetandroid.LeakSink;
+
+        specialinvoke $r2.<com.test.targetandroid.LeakSink: void <init>()>();
+
+        if $i0 == 11 goto label5;
+
+        $r3 = new android.os.Bundle;
+
+        specialinvoke $r3.<android.os.Bundle: void <init>()>();
+
+        virtualinvoke $r2.<com.test.targetandroid.LeakSink: void onCreate(android.os.Bundle)>($r3);
+
+        $r3 = null;
+
+     label4:
+        if $i0 == 14 goto label5;
+
+        if $i0 == 15 goto label4;
+
+     label5:
+        if $i0 == 17 goto label1;
+
+        return;
+    }
+
+[IccTA] In step Beginning, The number of Jimple line is 23792
+In step Beginning, The number of Jimple method is 7465
+In step Beginning, The number of Jimple class is 542
+In step Beginning, The number of Jimple component is 6
 
 [IccTA] Application classes:
 [IccTA] dummyMainClass
 [IccTA] com.test.targetandroid.MainActivity
-[IccTA] android.print.PageRange
-[IccTA] android.print.PrintAttributes$Builder
-[IccTA] android.print.PrintAttributes$MediaSize
-[IccTA] android.print.PrintAttributes$Resolution
-[IccTA] android.print.PrintAttributes$Margins
-[IccTA] android.print.PrintAttributes
-[IccTA] android.print.PrintDocumentAdapter$LayoutResultCallback
-[IccTA] android.print.PrintDocumentInfo
-[IccTA] android.print.PrintDocumentAdapter$WriteResultCallback
-[IccTA] android.print.PrintDocumentAdapter
-[IccTA] android.print.PrintDocumentInfo$Builder
-[IccTA] android.print.PrintJob
-[IccTA] android.print.PrintJobId
-[IccTA] android.print.PrintJobInfo
-[IccTA] android.print.PrinterId
-[IccTA] android.print.PrintManager
-[IccTA] android.print.pdf.PrintedPdfDocument
-[IccTA] android.transition.Transition
-[IccTA] android.transition.TransitionValues
-[IccTA] android.transition.Transition$TransitionListener
-[IccTA] android.transition.Transition$EpicenterCallback
-[IccTA] android.transition.TransitionManager
-[IccTA] android.transition.Scene
-[IccTA] android.transition.TransitionSet
 [IccTA] com.test.targetandroid.BuildConfig
 [IccTA] com.test.targetandroid.LeakSink
 [IccTA] com.test.targetandroid.LeakSource
@@ -414,12 +321,313 @@ In step Beginning, The number of Jimple component is 7
 [IccTA] com.test.targetandroid.R$string
 [IccTA] com.test.targetandroid.R$style
 [IccTA] epicc provider is used.
+[IccTA] body:     public boolean onOptionsItemSelected(android.view.MenuItem)
+    {
+        com.test.targetandroid.MainActivity $r0;
+        android.view.MenuItem $r1;
+        android.content.Intent $r2;
+        com.test.targetandroid.LeakSource $r3;
+        int $i0;
+        java.lang.String $r4;
+        boolean $z0;
+
+        $r0 := @this: com.test.targetandroid.MainActivity;
+
+        $r1 := @parameter0: android.view.MenuItem;
+
+        $i0 = interfaceinvoke $r1.<android.view.MenuItem: int getItemId()>();
+
+        if $i0 != 2131230724 goto label1;
+
+        $r3 = new com.test.targetandroid.LeakSource;
+
+        specialinvoke $r3.<com.test.targetandroid.LeakSource: void <init>(android.app.Activity)>($r0);
+
+        $r4 = virtualinvoke $r3.<com.test.targetandroid.LeakSource: java.lang.String getTaint()>();
+
+        $r2 = new android.content.Intent;
+
+        specialinvoke $r2.<android.content.Intent: void <init>(android.content.Context,java.lang.Class)>($r0, class "com/test/targetandroid/LeakSink");
+
+        virtualinvoke $r2.<android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)>("deviceid", $r4);
+
+        virtualinvoke $r0.<com.test.targetandroid.MainActivity: void startActivity(android.content.Intent)>($r2);
+
+        return 1;
+
+     label1:
+        $z0 = specialinvoke $r0.<android.app.Activity: boolean onOptionsItemSelected(android.view.MenuItem)>($r1);
+
+        return $z0;
+    }
+
+[IccTA] bs: $r0 := @this: com.test.targetandroid.MainActivity
+[IccTA] bs: $r1 := @parameter0: android.view.MenuItem
+[IccTA] bs: $i0 = interfaceinvoke $r1.<android.view.MenuItem: int getItemId()>()
+[IccTA] s: $i0 = interfaceinvoke $r1.<android.view.MenuItem: int getItemId()>()
+[IccTA] bs: if $i0 != 2131230724 goto $z0 = specialinvoke $r0.<android.app.Activity: boolean onOptionsItemSelected(android.view.MenuItem)>($r1)
+[IccTA] bs: $r3 = new com.test.targetandroid.LeakSource
+[IccTA] bs: specialinvoke $r3.<com.test.targetandroid.LeakSource: void <init>(android.app.Activity)>($r0)
+[IccTA] s: specialinvoke $r3.<com.test.targetandroid.LeakSource: void <init>(android.app.Activity)>($r0)
+[IccTA] bs: $r4 = virtualinvoke $r3.<com.test.targetandroid.LeakSource: java.lang.String getTaint()>()
+[IccTA] s: $r4 = virtualinvoke $r3.<com.test.targetandroid.LeakSource: java.lang.String getTaint()>()
+[IccTA] bs: $r2 = new android.content.Intent
+[IccTA] bs: specialinvoke $r2.<android.content.Intent: void <init>(android.content.Context,java.lang.Class)>($r0, class "com/test/targetandroid/LeakSink")
+[IccTA] s: specialinvoke $r2.<android.content.Intent: void <init>(android.content.Context,java.lang.Class)>($r0, class "com/test/targetandroid/LeakSink")
+[IccTA] bs: virtualinvoke $r2.<android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)>("deviceid", $r4)
+[IccTA] s: virtualinvoke $r2.<android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)>("deviceid", $r4)
+[IccTA] bs: virtualinvoke $r0.<com.test.targetandroid.MainActivity: void startActivity(android.content.Intent)>($r2)
+[IccTA] s: virtualinvoke $r0.<com.test.targetandroid.MainActivity: void startActivity(android.content.Intent)>($r2)
+[IccTA] u: virtualinvoke $r0.<com.test.targetandroid.MainActivity: void startActivity(android.content.Intent)>($r2)
+[IccTA] fromU: virtualinvoke $r0.<com.test.targetandroid.MainActivity: void startActivity(android.content.Intent)>($r2)
 [IccTA] select distinct d.method, d.instruction, d.exit_kind, f.class from Applications a, Classes b, Components c, ExitPoints d, Applications e, Classes f, Components g, ProviderLinks h where a.id=b.app_id and b.id=c.class_id and b.id=d.class_id and e.id=f.app_id and f.id=g.class_id and c.id=h.src_component_id and g.id=h.dest_component_id and d.exit_kind='p' and a.app in (?) and e.app in (?);
-[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 64 edges
-[IccTA] In step Ending, The number of Jimple line is 36110
-In step Ending, The number of Jimple method is 10912
-In step Ending, The number of Jimple class is 855
-In step Ending, The number of Jimple component is 7
+<com.test.targetandroid.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)> [11] com.test.targetandroid.LeakSink {11}
+[IccTA] instrument destination class for com.test.targetandroid.LeakSink
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public void dummyMainMethod()
+    {
+        com.test.targetandroid.LeakSink this, $r0;
+        int $i0;
+        android.os.Bundle $r1;
+        android.content.Intent $r2;
+
+        this := @this: com.test.targetandroid.LeakSink;
+
+        $i0 = 0;
+
+     label1:
+        if $i0 == 0 goto label3;
+
+        $r0 = new com.test.targetandroid.LeakSink;
+
+        specialinvoke $r0.<com.test.targetandroid.LeakSink: void <init>()>();
+
+        if $i0 == 1 goto label3;
+
+        $r1 = new android.os.Bundle;
+
+        specialinvoke $r1.<android.os.Bundle: void <init>()>();
+
+        virtualinvoke $r0.<com.test.targetandroid.LeakSink: void onCreate(android.os.Bundle)>($r1);
+
+        $r1 = null;
+
+     label2:
+        $r2 = virtualinvoke $r0.<com.test.targetandroid.LeakSink: android.content.Intent getIntent()>();
+
+        if $i0 == 3 goto label2;
+
+        if $i0 == 4 goto label2;
+
+        if $i0 == 5 goto label2;
+
+        if $i0 == 6 goto label3;
+
+        if $i0 == 7 goto label2;
+
+     label3:
+        if $i0 == 9 goto label1;
+
+        return;
+    }
+
+[IccTA] wrapper method <com.test.targetandroid.LeakSink: void <init>()> 
+    public void <init>()
+    {
+        com.test.targetandroid.LeakSink $r0;
+
+        $r0 := @this: com.test.targetandroid.LeakSink;
+
+        specialinvoke $r0.<android.app.Activity: void <init>()>();
+
+        return;
+    }
+
+[IccTA] wrapper method <com.test.targetandroid.LeakSink: void onCreate(android.os.Bundle)> 
+    protected void onCreate(android.os.Bundle)
+    {
+        com.test.targetandroid.LeakSink $r0;
+        android.os.Bundle $r1;
+        com.test.targetandroid.LeakSource $r2;
+        android.content.Intent $r3;
+        java.lang.String $r4;
+
+        $r0 := @this: com.test.targetandroid.LeakSink;
+
+        $r1 := @parameter0: android.os.Bundle;
+
+        specialinvoke $r0.<android.app.Activity: void onCreate(android.os.Bundle)>($r1);
+
+        virtualinvoke $r0.<com.test.targetandroid.LeakSink: void setContentView(int)>(2130903041);
+
+        virtualinvoke $r0.<com.test.targetandroid.LeakSink: void setTitle(java.lang.CharSequence)>("22222222222");
+
+        $r3 = virtualinvoke $r0.<com.test.targetandroid.LeakSink: android.content.Intent getIntent()>();
+
+        $r4 = virtualinvoke $r3.<android.content.Intent: java.lang.String getStringExtra(java.lang.String)>("deviceid");
+
+        $r2 = new com.test.targetandroid.LeakSource;
+
+        specialinvoke $r2.<com.test.targetandroid.LeakSource: void <init>(android.app.Activity)>($r0);
+
+        virtualinvoke $r2.<com.test.targetandroid.LeakSource: void sendSMS(java.lang.String)>($r4);
+
+        return;
+    }
+
+[IccTA] wrapper method <com.test.targetandroid.LeakSink: void <init>(android.content.Intent)> 
+    public void <init>(android.content.Intent)
+    {
+        com.test.targetandroid.LeakSink $r0;
+        android.content.Intent $r1;
+
+        $r0 := @this: com.test.targetandroid.LeakSink;
+
+        $r1 := @parameter0: android.content.Intent;
+
+        specialinvoke $r0.<com.test.targetandroid.LeakSink: void <init>()>();
+
+        <com.test.targetandroid.LeakSink: android.content.Intent intent_for_ipc> = $r1;
+
+        return;
+    }
+
+[IccTA] wrapper method <com.test.targetandroid.LeakSink: android.content.Intent getIntent()> 
+    public android.content.Intent getIntent()
+    {
+        com.test.targetandroid.LeakSink $r0;
+        android.content.Intent $r1;
+
+        $r0 := @this: com.test.targetandroid.LeakSink;
+
+        $r1 = <com.test.targetandroid.LeakSink: android.content.Intent intent_for_ipc>;
+
+        return $r1;
+    }
+
+[IccTA] wrapper method <com.test.targetandroid.LeakSink: android.content.Intent getIntentForActivityResult()> 
+    public android.content.Intent getIntentForActivityResult()
+    {
+        com.test.targetandroid.LeakSink $r0;
+        android.content.Intent $r1;
+
+        $r0 := @this: com.test.targetandroid.LeakSink;
+
+        $r1 = <com.test.targetandroid.LeakSink: android.content.Intent intent_for_activity_result>;
+
+        return $r1;
+    }
+
+[IccTA] wrapper method <com.test.targetandroid.LeakSink: void dummyMainMethod()> 
+    public void dummyMainMethod()
+    {
+        com.test.targetandroid.LeakSink this, $r0;
+        int $i0;
+        android.os.Bundle $r1;
+        android.content.Intent $r2;
+
+        this := @this: com.test.targetandroid.LeakSink;
+
+        $i0 = 0;
+
+     label1:
+        if $i0 == 0 goto label3;
+
+        $r0 = new com.test.targetandroid.LeakSink;
+
+        specialinvoke $r0.<com.test.targetandroid.LeakSink: void <init>()>();
+
+        if $i0 == 1 goto label3;
+
+        $r1 = new android.os.Bundle;
+
+        specialinvoke $r1.<android.os.Bundle: void <init>()>();
+
+        virtualinvoke $r0.<com.test.targetandroid.LeakSink: void onCreate(android.os.Bundle)>($r1);
+
+        $r1 = null;
+
+     label2:
+        $r2 = virtualinvoke $r0.<com.test.targetandroid.LeakSink: android.content.Intent getIntent()>();
+
+        if $i0 == 3 goto label2;
+
+        if $i0 == 4 goto label2;
+
+        if $i0 == 5 goto label2;
+
+        if $i0 == 6 goto label3;
+
+        if $i0 == 7 goto label2;
+
+     label3:
+        if $i0 == 9 goto label1;
+
+        return;
+    }
+
+[IccTA] create method to call wrapper class: com.test.targetandroid.LeakSink
+[IccTA] new lifecypcle method: <IpcSC: void redirector0(android.content.Intent)> body:     public static void redirector0(android.content.Intent)
+    {
+        android.content.Intent $r0;
+        com.test.targetandroid.LeakSink $r1;
+
+        $r0 := @parameter0: android.content.Intent;
+
+        $r1 = new com.test.targetandroid.LeakSink;
+
+        specialinvoke $r1.<com.test.targetandroid.LeakSink: void <init>(android.content.Intent)>($r0);
+
+        virtualinvoke $r1.<com.test.targetandroid.LeakSink: void dummyMainMethod()>();
+
+        return;
+    }
+
+[IccTA] new body: 
+    public boolean onOptionsItemSelected(android.view.MenuItem)
+    {
+        com.test.targetandroid.MainActivity $r0;
+        android.view.MenuItem $r1;
+        android.content.Intent $r2;
+        com.test.targetandroid.LeakSource $r3;
+        int $i0;
+        java.lang.String $r4;
+        boolean $z0;
+
+        $r0 := @this: com.test.targetandroid.MainActivity;
+
+        $r1 := @parameter0: android.view.MenuItem;
+
+        $i0 = interfaceinvoke $r1.<android.view.MenuItem: int getItemId()>();
+
+        if $i0 != 2131230724 goto label1;
+
+        $r3 = new com.test.targetandroid.LeakSource;
+
+        specialinvoke $r3.<com.test.targetandroid.LeakSource: void <init>(android.app.Activity)>($r0);
+
+        $r4 = virtualinvoke $r3.<com.test.targetandroid.LeakSource: java.lang.String getTaint()>();
+
+        $r2 = new android.content.Intent;
+
+        specialinvoke $r2.<android.content.Intent: void <init>(android.content.Context,java.lang.Class)>($r0, class "com/test/targetandroid/LeakSink");
+
+        virtualinvoke $r2.<android.content.Intent: android.content.Intent putExtra(java.lang.String,java.lang.String)>("deviceid", $r4);
+
+        staticinvoke <IpcSC: void redirector0(android.content.Intent)>($r2);
+
+        return 1;
+
+     label1:
+        $z0 = specialinvoke $r0.<android.app.Activity: boolean onOptionsItemSelected(android.view.MenuItem)>($r1);
+
+        return $z0;
+    }
+
+[IccTA] In step Ending, The number of Jimple line is 23826
+In step Ending, The number of Jimple method is 7470
+In step Ending, The number of Jimple class is 543
+In step Ending, The number of Jimple component is 6
 
 [Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
 [Spark] Pointer Assignment Graph in 0.0 seconds.
@@ -427,32 +635,80 @@ In step Ending, The number of Jimple component is 7
 [Spark] Pointer Graph simplified in 0.0 seconds.
 [Spark] Propagation in 0.0 seconds.
 [Spark] Solution found in 0.0 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 78 edges
 [main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
 [main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 2 sources and 2 sinks.
-[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 10
-[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 12
-[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 58 forward and 17 backward edges solved, processing 2 results...
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 55
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 91
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 330 forward and 125 backward edges solved, processing 2 results...
 [main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 2 connections between sources and sinks
 [main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1
 [main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2
-[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.004291115 seconds in total for 15 edges
-[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r0.<com.test.targetandroid.MainActivity: void startActivity(android.content.Intent)>($r2) on line 36 in method <com.test.targetandroid.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() on line 17 in method <com.test.targetandroid.LeakSource: java.lang.String getTaint()>
-[IccTA] Analysis has run for 40.88982853 seconds
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.004301448 seconds in total for 20 edges
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r5.<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)>("+8610010", null, $r2, null, null) in method <com.test.targetandroid.MainActivity: void onCreate(android.os.Bundle)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() on line 21 in method <com.test.targetandroid.MainActivity: void onCreate(android.os.Bundle)>
 [main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r2.<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)>("+8610010", null, $r1, null, null) in method <com.test.targetandroid.LeakSource: void sendSMS(java.lang.String)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r0.<com.test.targetandroid.LeakSink: android.content.Intent getIntent()>() on line 15 in method <com.test.targetandroid.LeakSink: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() on line 21 in method <com.test.targetandroid.MainActivity: void onCreate(android.os.Bundle)>
+[IccTA] Analysis has run for 11.872073003 seconds
 [IccTA] The statistics of this app are listed as follows:
-====>numberOfComponentsExported: 0
+====>numberOfComponentsExported: 1
 ====>numberOfComponentsProtectedByPermission: 0
-====>numberOfIntents: 0
+====>numberOfIntents: 1
 ====>numberOfImplicitIntents: 0
-====>numberOfExplicitIntents: 0
-====>numberOfIntentsContainingMimeType: 0
-====>numberOfIntentsContainingDataExceptMimeType: 0
-====>numberOfIntentFilters: 0
-====>numberOfIntentFiltersContainingMimeType: 0
-====>numberOfIntentFiltersContainingDataExceptMimeType: 0
+====>numberOfExplicitIntents: 1
+====>numberOfIntentsContainingMimeType: 1
+====>numberOfIntentsContainingDataExceptMimeType: 1
+====>numberOfIntentFilters: 1
+====>numberOfIntentFiltersContainingMimeType: 1
+====>numberOfIntentFiltersContainingDataExceptMimeType: 1
 
 [IccTA] The details of this app are listed as follows:
+Application: com.test.targetandroid
+Type: a
+Class: com.test.targetandroid.MainActivity
+Exported: true
+ProtectedPermission: null
+Intents: 
+  Intent1: 
+    Implicit: false
+    DestComponentName: null
+    Action: null
+    Data:
+        type: 
+        subtype: 
+        scheme: 
+        path: 
+        host: 
+        port: 
+        ssp: 
+        uri: 
+        query: 
+        authority: 
+IntentFilters: 
+  IntentFilter1: 
+    Action: android.intent.action.MAIN
+    Category: android.intent.category.LAUNCHER
+    Data:
+        type: 
+        subtype: 
+        scheme: 
+        path: 
+        host: 
+        port: 
+        ssp: 
+        uri: 
+        query: 
+        authority: 
+ContentResolver URIs: 
+
+Application: com.test.targetandroid
+Type: a
+Class: com.test.targetandroid.LeakSink
+Exported: false
+ProtectedPermission: null
+Intents: 
+IntentFilters: 
+ContentResolver URIs: 
+
 [IccTA] insert into Paths (app_id,source,sink,paths,type,icc,reserved) values (?,?,?,?,?,?,?);
 [IccTA] insert into Paths (app_id,source,sink,paths,type,icc,reserved) values (?,?,?,?,?,?,?);
